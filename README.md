@@ -25,8 +25,6 @@ event-management-system/
 ### Backend
 - Java
 - Spring Boot
-- Spring Security + JWT Authentication
-- Spring Data JPA
 - PostgreSQL
 - Gradle
 
