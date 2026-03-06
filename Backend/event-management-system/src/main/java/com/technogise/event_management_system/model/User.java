@@ -46,4 +46,8 @@ public class User {
         createdAt = LocalDateTime.now();
         updatedAt = LocalDateTime.now();
     }
+    @PostPersist
+    protected void onUpdate() {
+        updatedAt = LocalDateTime.now();
+    }
 }
