@@ -25,7 +25,7 @@ public class AuthService {
 
         user.setName(request.getName());
         user.setEmail(request.getEmail());
-        user.setRole(UserRole.ATTENDEE);
+        user.setRole(UserRole.ATTENDEE);  //default role for new users is set to ATTENDEE, which means they can only view events and register for them, but cannot create or manage events.
 
        
         user.setPassword(passwordEncoder.encode(request.getPassword()));
