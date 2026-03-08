@@ -2,15 +2,16 @@ package com.technogise.event_management_system.repository;
 
 import java.util.Optional;
 import java.util.UUID;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.technogise.event_management_system.enums.UserRole;
 import com.technogise.event_management_system.model.User;
 
-
 @Repository
 public interface UserRepository extends JpaRepository<User, UUID> {
-    Optional<User> findByEmail(String email);
-    Optional<User> findFirstByRole(UserRole role);
+  Optional<User> findByEmail(String email);
+
+  Optional<User> findFirstByRole(UserRole role);
 }
